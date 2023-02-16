@@ -1,7 +1,7 @@
 // Codes By Mahdi Tasha
 import React, { Component } from "react";
 
-class NumberBtn extends Component {
+class BottomButtons extends Component {
     constructor(prop) {
         super(prop);
 
@@ -12,10 +12,10 @@ class NumberBtn extends Component {
     render() {
         return (
             <button>
-                
+                {this.props.value}
             </button>
         )
     }
 }
 
-export default NumberBtn;
+export default BottomButtons;
