@@ -1,6 +1,5 @@
 // Codes By Mahdi Tasha
 // For Debugging
-body:last-of-type {margin-bottom: 100vh;}
 
 // Default Styles
 h1,h2,h3,h4,h5,h6, p {padding: 0;margin: 0;}
@@ -13,4 +12,11 @@ body {
   overflow-x: hidden;
   scroll-behavior: smooth;
   font-family: Poppins, sans-serif !important;
+  background-image: url('../img/img-bg.jpg');
+  background-size: 80%;
+  background-position: center;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
