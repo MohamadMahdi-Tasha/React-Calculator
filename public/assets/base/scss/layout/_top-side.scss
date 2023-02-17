@@ -1,0 +1,27 @@
+// Codes By Mahdi Tasha
+@use "../global";
+
+.calculator {
+  &__top-side {
+    padding-block: 3rem;
+  }
+
+  &__operation {
+    text-align: right;
+    font-weight: 500;
+    font-size: 24px;
+    color: global.$gray;
+    margin-bottom: 1rem;
+
+    > span {
+      color: global.$brilliant-azure;
+    }
+  }
+
+  &__equal {
+    text-align: right;
+    font-weight: 500;
+    font-size: 48px;
+    color: white;
+  }
+}
