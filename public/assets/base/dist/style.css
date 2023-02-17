@@ -413,4 +413,30 @@ body {
   align-items: center;
 }
 
+.calculator {
+  background-color: rgba(23, 24, 26, 0.6);
+  backdrop-filter: blur(20px);
+  border-radius: 39px;
+  padding: 1rem;
+}
+.calculator__top-side {
+  padding-block: 3rem;
+}
+.calculator__operation {
+  text-align: right;
+  font-weight: 500;
+  font-size: 24px;
+  color: #818181;
+  margin-bottom: 1rem;
+}
+.calculator__operation > span {
+  color: #29A8FF;
+}
+.calculator__equal {
+  text-align: right;
+  font-weight: 500;
+  font-size: 48px;
+  color: white;
+}
+
 /*# sourceMappingURL=style.css.map */
