@@ -1,5 +1,6 @@
 // Codes By Mahdi Tasha
 @use "../global";
+@use 'tablet-styles/bottom-side';
 
 .calculator {
   &__bottom-side {
@@ -52,4 +53,8 @@
       grid-column: span 2;
     }
   }
+}
+
+@media (max-width: 768px) {
+  @include bottom-side.tabletStyles;
 }

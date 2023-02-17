@@ -1,0 +1,9 @@
+// Codes By Mahdi Tasha
+
+@mixin tabletStyles{
+  .calculator {
+    &__bottom-side {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+}
