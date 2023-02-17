@@ -16,10 +16,11 @@ body {
   scroll-behavior: smooth;
   font-family: Poppins, sans-serif !important;
   background-image: url('../img/img-bg.jpg');
-  background-size: 80%;
+  background-size: cover;
   background-position: center;
   min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 1rem;
 }
