@@ -426,6 +426,11 @@ body {
   box-shadow: 0 20px 30px rgba(0, 0, 0, 0.3);
 }
 
+@media (max-width: 768px) {
+  .calculator {
+    width: calc(100vw - 5rem);
+  }
+}
 .calculator__top-side {
   padding-block: 3rem;
 }

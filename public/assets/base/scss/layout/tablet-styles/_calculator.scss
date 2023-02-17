@@ -1,0 +1,7 @@
+// Codes By Mahdi Tasha
+
+@mixin tabletStyles{
+  .calculator {
+    width: calc(100vw - 5rem);
+  }
+}
