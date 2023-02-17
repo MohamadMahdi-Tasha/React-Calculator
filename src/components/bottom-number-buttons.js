@@ -3,7 +3,7 @@ import React from "react";
 
 function BottomNumberButtons(props) {
     return (
-        <button className={'calculator__number-btn'}>{props.value}</button>
+        <button data-value={props.value} className={'calculator__number-btn'}>{props.value}</button>
     )
 }
 

@@ -35,7 +35,7 @@ class BottomSideComponent extends Component {
                 <BottomNumberButtons value={'3'} />
                 <BottomOperatorButtons value={'='} />
                 <BottomNumberButtons value={'0'} />
-                <BottomOperatorButtons value={'.'} />
+                <BottomNumberButtons value={'.'} />
             </div>
         )
     }

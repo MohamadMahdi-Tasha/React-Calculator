@@ -1,0 +1,55 @@
+// Codes By Mahdi Tasha
+@use "../global";
+
+.calculator {
+  &__bottom-side {
+    display: grid;
+    grid-template-columns: repeat(4, 62px);
+    grid-template-rows: 40px 62px 62px 62px 62px 62px;
+    gap: 20px;
+  }
+
+  &__oprator-btn {
+    &:is([data-value="e"], [data-value="micro"], [data-value="sin"], [data-value="deg"]) {
+      background-color: global.$dark-charcoal;
+      border-radius: 24px;
+      font-weight: 500;
+      font-size: 15px;
+      border: none;
+      color: global.$brilliant-azure;
+    }
+
+    &:is([data-value="Ac"], [data-value="delete"]) {
+      border: none;
+      font-weight: 500;
+      font-size: 32px;
+      color: #A5A5A5;
+      background-color: global.$gray;
+      border-radius: 16px;
+    }
+
+    &:is([data-value="/"], [data-value="*"], [data-value="+"], [data-value="-"], [data-value="="]) {
+      color: white;
+      border: none;
+      border-radius: 16px;
+      background-color: global.$brilliant-azure;
+    }
+
+    &[data-value="="] {
+      grid-row: span 2;
+    }
+  }
+
+  &__number-btn {
+    background-color: global.$dark-charcoal;
+    border-radius: 16px;
+    border: none;
+    font-weight: 500;
+    font-size: 32px;
+    color: global.$brilliant-azure;
+
+    &[data-value="0"] {
+      grid-column: span 2;
+    }
+  }
+}
