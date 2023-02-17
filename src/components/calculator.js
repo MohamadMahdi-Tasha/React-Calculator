@@ -6,7 +6,7 @@ import BottomSideComponent from "./bottom-side";
 class Calculator extends Component {
     render() {
         return (
-            <div>
+            <div className={'calculator'}>
                 <TopSideComponent />
                 <BottomSideComponent />
             </div>

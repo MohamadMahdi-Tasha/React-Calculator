@@ -13,7 +13,7 @@ class BottomSideComponent extends Component {
 
     render() {
         return (
-            <div>
+            <div className={'calculator__bottom-side'}>
                 <BottomOperatorButtons value={'e'}/>
                 <BottomOperatorButtons value={'micro'}/>
                 <BottomOperatorButtons value={'sin'} />
