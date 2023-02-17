@@ -1,6 +1,7 @@
 // Codes By Mahdi Tasha
 @use "../global";
-@use 'tablet-styles/bottom-side';
+@use 'tablet-styles/bottom-side' as tabletStyles;
+@use 'mobile-styles/bottom-side' as mobileStyles;
 
 .calculator {
   &__bottom-side {
@@ -55,6 +56,5 @@
   }
 }
 
-@media (max-width: 768px) {
-  @include bottom-side.tabletStyles;
-}
+@media (max-width: 768px) {@include tabletStyles.tabletStyles;}
+@media (max-width: 425px) {@include mobileStyles.mobileStyles;}

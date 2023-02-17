@@ -2,3 +2,8 @@
 @forward "calculator";
 @forward "top-side";
 @forward "bottom-side";
+@use "mobile-styles/defualt" as mobileStylesOfBody;
+
+@media (max-width: 425px) {
+  @include mobileStylesOfBody.mobileStyles;
+}
