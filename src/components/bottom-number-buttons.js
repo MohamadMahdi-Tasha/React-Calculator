@@ -11,7 +11,7 @@ function BottomNumberButtons(props) {
             operationTxt.textContent = ''
         }
 
-        operationTxt.textContent += props.value;
+        operationTxt.append(props.value);
     }
 
     return <button onClick={handleClick} data-value={props.value} className={'calculator__number-btn'}>{props.value}</button>
