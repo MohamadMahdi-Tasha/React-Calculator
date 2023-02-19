@@ -45,12 +45,21 @@ function BottomOpratorButtons(props) {
         operationTxt.textContent = '';
     }
 
+    function handleEqualClick() {
+        const operationTxt = document.querySelector('.calculator__operation');
+        const equalTxt = document.querySelector('.calculator__equal');
+
+        equalTxt.textContent = eval(operationTxt.textContent);
+    }
+
     function handleOtherClick() {
         const operationTxt = document.querySelector('.calculator__operation');
         const newSpanElement = document.createElement('span');
 
-        newSpanElement.textContent = props.value;
-        operationTxt.appendChild(newSpanElement);
+        if (operationTxt.lastChild.nodeName.toLowerCase() !== 'span') {
+            newSpanElement.textContent = props.value;
+            operationTxt.appendChild(newSpanElement);
+        }
     }
 
     if (props.value === 'delete') {
@@ -65,6 +74,8 @@ function BottomOpratorButtons(props) {
         return <button onClick={handleDegClick} data-value={props.value} className={'calculator__oprator-btn'}>{props.value}</button>
     } else if (props.value === 'Ac'){
         return <button onClick={handleAcClick} data-value={props.value} className={'calculator__oprator-btn'}>{props.value}</button>
+    } else if (props.value === '=') {
+        return <button onClick={handleEqualClick} data-value={props.value} className={'calculator__oprator-btn'}>{props.value}</button>
     } else {
         return <button onClick={handleOtherClick} data-value={props.value} className={'calculator__oprator-btn'}>{props.value}</button>
     }
