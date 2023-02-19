@@ -12,8 +12,8 @@ class TopSideComponent extends Component{
     render() {
         return (
             <div className={'calculator__top-side'}>
-                <h6 className={'calculator__operation'}></h6>
-                <h6 className={'calculator__equal'}></h6>
+                <p className={'calculator__operation'}></p>
+                <p className={'calculator__equal'}></p>
             </div>
         )
     }
